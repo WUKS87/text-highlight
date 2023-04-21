@@ -1,0 +1,6 @@
+<div class="input-wrapper">
+    <div class="highlights-wrapper">
+        <div class="highlights" [innerHTML]="highlightedText"></div>
+    </div>
+    <textarea [ngModel]="textInput" (ngModelChange)="changeTextControl($event)"></textarea>
+</div>

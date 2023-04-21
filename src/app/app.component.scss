@@ -1,0 +1,47 @@
+.input-wrapper {
+    display: flex;
+    position: relative;
+    max-width: 500px;
+    font-family: 'Arial';
+    font-size: 14px;
+
+    .highlights-wrapper {
+        position: absolute;
+        z-index: 1;
+        background-color: #fff;
+        pointer-events: none;
+        padding: 4px 4px;
+
+        .highlights {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            color: transparent;
+            letter-spacing: 1px;
+        
+            .square {
+                background-color: #d5ebff;
+            }
+            .curly {
+                background-color: #ffffaa;
+            }
+        }
+    }
+
+    textarea {
+        width: 100%;
+        min-height: 200px;
+        font-family: 'Arial';
+        font-size: 14px;
+        letter-spacing: 1px;
+        display: flex;
+        position: absolute;
+        z-index: 2;
+        margin: 0;
+        border-width: 1px;
+        border-radius: 4px;
+        color: #444;
+        background-color: transparent;
+        padding: 2px 4px;
+        resize: none;
+    }
+}
